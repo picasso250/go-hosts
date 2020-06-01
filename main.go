@@ -15,7 +15,7 @@ const hostsFileName = "c:\\windows\\System32\\drivers\\etc\\hosts"
 func getURL() string {
 	f, err := os.Open("url")
 	if err != nil {
-		return "http://picasso250.gitee.io/go-hosts/hosts.html"
+		return "http://picasso250.gitee.io/gohosts/hosts.html"
 	}
 	defer f.Close()
 	s, err := ioutil.ReadAll(f)
